@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drizzy Gems</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Pinyon+Script|Roboto:400" rel="stylesheet">
 </head>
 <body>
-
+    <header>
+        <h1>Drizzy<br> Gems<img src="images/diamond-icon.svg" alt=""></h1>
+        
+        <p>Find the perfect Drake bar for your gram, fam.</p>
+        <a class="btn" href="#question1">Get Started</a>
+    </header>
     <main class="main">
         <section class="questions">
             <form class="form">
-                <div class="question question1">
+                <div class="question" id="question1">
                     <p>What kind of gram is this?</p>
                     <!-- sadBoi option -->
                     <input type="radio" name="type" id="selfie" value="sadBoi">
@@ -66,7 +74,7 @@
                     <label for="">Nails done, hair done, every thing did - Oh you fancy, huh?</label>
                     <!-- toughGuy -->
                     <input type="radio" name="clothing" id="canadaGoose" value="toughGuy">
-                    <label for="">Posted up in my Canada Goose - The 6 cold like Alaska.</label>
+                    <label for="">Flexin' in my Canada Goose - The 6 cold like Alaska.</label>
                     <!-- goodTimes -->
                     <input type="radio" name="clothing" id="hermes" value="goodTimes">
                     <label for="">I'm dressed up - Hermès link, brand new mink.</label>
@@ -117,6 +125,14 @@
                 <input class="submit" type="submit">
             </form>
         </section>
+        <footer>
+            <div>Icons made by
+                <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                    target="_blank">CC 3.0 BY</a>
+            </div>
+        </footer>
     </main>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
     <script src="scripts/script.js"></script>
