@@ -1,6 +1,7 @@
 //Possible captions!
+const app = {}
 
-const captions = {
+app.captions = {
     sadBoi: ["I'm just saying you could do better.", "My heart is way too frozen to get broken.", "Passionate from miles away, passive with the things you say.", "Something ain’t right when we talking, look like you hiding your problems.", "I got fake people showing fake love to me, straight up to my face.", "I wanna move to Dubai, so I don’t never have to kick it with none of you guys.", "Don’t pull up at 6 AM to cuddle with me.", "Love is just not in my plans. Not even takin' a chance.", "When a good thing goes bad it’s not the end of the world, it’s just the end of a world that you had with one girl.", "Why you gotta fight with me at Cheesecake?", "I learned working with the negatives could make for better pictures.", "They scream out my failures and whisper my accomplishments", "I know you still think about the times we had."],
     toughGuy: ["Worrying about your followers, you need to get your dollars up.", "I'm up right now and you suck right now.", "Pray the real live forever man, pray the fakes get exposed.", "Know yourself, know your worth.", "I don’t take naps. Me and the money are way too attached to go and do that.", "I’m in it for the glory, not the honour mention.", "Hermès link, ice-blue mink.", "She say, Do you love me?, I tell her only partly, I only love my bed and my mama, I'm sorry!", "I wear every single chain, even when I’m in the house", "Overdosed on confidence.", "Last name ever. First name greatest.", "Trigger fingers turn to twitter fingers.", "What a time to be alive.", "Pray the real live forever, man. Pray the fakes get exposed.", "I order that Alfredo pasta, Then eat in the kitchen like I’m in the mafia" ],
     ladiesMan: ["You the best I ever had", "Sweatpants, hair tied, chillin' with no makeup on.", "I’m blem for real, I might just say how I feel.", "We need to forward to the islands and get you gold, no spray tans.", "Out of body. That’s just how I feel when I’m around you, shawty.", "I know shorty and she doesn't want no slow song.", "You ain't stressin' off no lover in the past tense, You already had them.", "'Cause you're a good girl and you know it.", "Accept yourself, you don't have to prove s*** to no one except yourself.", "I want your hot love and emotion endlessly."],
@@ -11,7 +12,7 @@ const captions = {
 
 //Possible images
 
-const images = {
+app.images = {
     sadBoi: ["images/sadBoi1.jpg", "images/sadBoi2.jpg", "images/sadBoi3.jpg", "images/sadBoi4.jpg", "images/sadBoi5.jpg" ],
     toughGuy: ["images/toughGuy1.jpg", "images/toughGuy2.jpg", "images/toughGuy3.jpg", "images/toughGuy4.jpg", "images/toughGuy5.jpg"],
     broskis: ["images/broskis1.jpg", "images/broskis2.jpg", "images/broskis3.jpg", "images/broskis4.jpg", "images/broskis5.jpg" ],
@@ -21,13 +22,13 @@ const images = {
 
 //Random function
 
-const getRandom = (array) => {
+app.getRandom = (array) => {
     return array[Math.floor(Math.random() * array.length)]
 }
 
 //Main function
 
-const app = () => {
+app.event = () => {
 
     //remove existing answer, if it's already on the DOM
 
@@ -102,13 +103,13 @@ const app = () => {
 
     //use getRandom() to determine which caption grouping you'll be drawing from.
 
-    const subject = getRandom(subjectFinalists);
+    const subject = app.getRandom(subjectFinalists);
 
     //Once you have the grouping, select a random caption from the captions object
 
-    const finalCaption = getRandom(captions[subject]);
+    const finalCaption = app.getRandom(app.captions[subject]);
 
-    const finalImage = getRandom(images[subject])    
+    const finalImage = app.getRandom(app.images[subject])    
     
     $('input:checked').removeAttr('checked');
 
@@ -118,15 +119,15 @@ const app = () => {
 
 //Document ready
 
-$(function() {    
-
-    $('form').on('submit', function(e){
+app.init = () => {
+    $('form').on('submit', function (e) {
         e.preventDefault();
-
         //Call app
 
-        app();
-
+        app.event();
     });
 
-});
+    $('.btn').smoothScroll()
+}
+
+$(app.init);

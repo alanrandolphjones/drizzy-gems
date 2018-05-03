@@ -7,11 +7,13 @@
     <title>Drizzy Gems</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Pinyon+Script|Roboto:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Pinyon+Script|Roboto:400|Roboto+Slab:400" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous"> -->
 </head>
 <body>
     <header>
-        <h1>Drizzy<br> Gems<img src="images/diamond-icon.svg" alt=""></h1>
+        <h1>Drizzy<br/> <i class="fas fa-gem"></i>Gems<i class="fas fa-gem"></i></h1>
         
         <p>Find the perfect Drake bar for your gram, fam.</p>
         <a class="btn" href="#question1">Get Started</a>
@@ -20,121 +22,192 @@
         <section class="questions">
             <form class="form">
                 <div class="question" id="question1">
-                    <p>What kind of gram is this?</p>
-                    <!-- sadBoi option -->
-                    <input type="radio" name="type" id="selfie" value="sadBoi">
-                    <label for="selfie">A selfie - Just like Aubrey, I get lonely.</label>
-                    <!-- broskis option -->
-                    <input type="radio" name="type" id="squad-photo" value="broskis">
-                    <label for="squad-photo">Group shot with the squad - No fake friends, we don't feel that.</label>
-                    <!-- ladiesMan option -->
-                    <input type="radio" name="type" id="bae-photo" value="ladiesMan">
-                    <label for="bae-photo">A photo with bae - I’m so I'm so I'm so I'm so I'm so proud of them.</label>
-                    <!-- toughGuy option -->
-                    <input type="radio" name="type" id="workOut" value="toughGuy">
-                    <label for="workOut">Lifting weights - Problems hit the gym, they all work out.</label>
-                    <!-- goodTimes -->
-                    <input type="radio" name="type" id="sunny" value="goodTimes">
-                    <label for="sunny">Soaking in the sun - getting gold, no spray tans.</label>
-                    <!-- sixGod -->
-                    <input type="radio" name="type" id="toronto-view" value="sixGod">
-                    <label for="toronto-view">View of the 6ix - I do it for the city, 'cuz I know the city love me.</label>
+                    <h3>What kind of gram?</h3>
+                    <ul class="card">
+                            <!-- sadBoi option -->
+                        <li>
+                            <input type="radio" name="type" id="selfie" value="sadBoi">
+                            <label for="selfie">A selfie - Just like Aubrey, I get lonely.</label>
+                        </li>
+                            <!-- broskis option -->
+                        <li>
+                            <input type="radio" name="type" id="squad-photo" value="broskis">
+                            <label for="squad-photo">Group shot with the squad - No fake friends, we don't feel that.</label>
+                        </li>
+                            <!-- ladiesMan option -->
+                        <li>
+                            <input type="radio" name="type" id="bae-photo" value="ladiesMan">
+                            <label for="bae-photo">A photo with bae - I’m so I'm so I'm so I'm so I'm so proud of them.</label>
+                        </li>
+                            <!-- toughGuy option -->
+                        <li>
+                            <input type="radio" name="type" id="workOut" value="toughGuy">
+                            <label for="workOut">Lifting weights - Problems hit the gym, they all work out.</label>
+                        </li>
+                            <!-- goodTimes -->
+                        <li>
+                            <input type="radio" name="type" id="sunny" value="goodTimes">
+                        
+                            <label for="sunny">Soaking in the sun - Getting gold, no spray tans.</label>
+                        </li>
+                            <!-- sixGod -->
+                        <li>
+                            <input type="radio" name="type" id="toronto-view" value="sixGod">
+                            <label for="toronto-view">View of the 6ix - I do it for the city, 'cuz I know the city love me.</label>
+                        </li>
+                    </ul>
+                    <a href="#question2" class="btn">Next Question</a>
                 </div>
-                <div class="question question2">
-                    <p>What are you doing?</p>
-                    <!-- sadBoi -->
-                    <input type="radio" name="action" id="" value="sadBoi">
-                    <label for="">Self-care - working with the negatives to make for better pictures.</label>
-                    <!-- broskis -->
-                    <input type="radio" name="action" id="hookah" value="broskis">
-                    <label for="hookah">Smoking shisha with the broskis - It's a Habibiz ting.</label>
-                    <!-- ladiesMan -->
-                    <input type="radio" name="action" id="" value="ladiesMan">
-                    <label for="">Eating brunch - Can't get Nobu, but you can get Milestone.</label>
-                    <!-- toughGuy -->
-                    <input type="radio" name="action" id="workingHard" value="toughGuy">
-                    <label for="work-photo">Hard at work - I been on a mission haven't left the condo.</label>
-                    <!-- goodTimes -->
-                    <input type="radio" name="action" id="champagne" value="goodTimes">
-                    <label for="champagne-shot">Drinking champagne - turned my birthday into a lifestyle.</label>
-                    <!-- sixGod -->
-                    <input type="radio" name="action" id="driving" value="sixGod">
-                    <label for="driving">Driving - I had Queen Street visions that nobody believed in.</label>
+                <div class="question" id="question2">
+                    <h3 class="h3--right">What are you doing?</h3>
+                    <ul class="card card--right">
+                        <!-- sadBoi -->
+                        <li>
+                            <input type="radio" name="action" id="self-care" value="sadBoi">
+                            <label for="self-care">Self-care - working with the negatives to make for better pictures.</label>
+                        </li>
+                        <!-- broskis -->
+                        <li>
+                            <input type="radio" name="action" id="hookah" value="broskis">
+                            <label for="hookah">Smoking shisha with the broskis - It's a Habibiz ting.</label>
+                        </li>
+                            <!-- ladiesMan -->
+                        <li>
+                            <input type="radio" name="action" id="brunch" value="ladiesMan">
+                            <label for="brunch">Eating brunch - Can't get Nobu, but you can get Milestone.</label>
+                        </li>
+                            <!-- toughGuy -->
+                        <li>
+                            <input type="radio" name="action" id="workingHard" value="toughGuy">
+                            <label for="workingHard">Hard at work - I been on a mission haven't left the condo.</label>
+                        </li>
+                            <!-- goodTimes -->
+                        <li>
+                            <input type="radio" name="action" id="champagne" value="goodTimes">
+                            <label for="champagne">Drinking champagne - turned my birthday into a lifestyle.</label>
+                        </li>
+                            <!-- sixGod -->
+                        <li>
+                            <input type="radio" name="action" id="driving" value="sixGod">
+                            <label for="driving">Driving - I had Queen Street visions that nobody believed in.</label>
+                        </li>
+                    </ul>
+                    <a href="#question3" class="btn btn--right">Next Question</a>
                 </div>
-                <div class="question question3">
-                    <p>What are you wearing?</p>
-                    <!-- sadBoi -->
-                    <input type="radio" name="clothing" id="sweatpants" value="sadBoi">
-                    <label for="sweatpants">Sweatpants, hair tied, chillin' with no makeup on. (Duh.)</label>
-                    <!-- broskis -->
-                    <input type="radio" name="clothing" id="owlSweaters" value="broskis">
-                    <label for="">OVO Gear - Owl sweaters inside the luggage, you gotta love it.</label>
-                    <!-- ladiesMan -->
-                    <input type="radio" name="clothing" id="fancy" value="ladiesMan">
-                    <label for="">Nails done, hair done, every thing did - Oh you fancy, huh?</label>
-                    <!-- toughGuy -->
-                    <input type="radio" name="clothing" id="canadaGoose" value="toughGuy">
-                    <label for="">Flexin' in my Canada Goose - The 6 cold like Alaska.</label>
-                    <!-- goodTimes -->
-                    <input type="radio" name="clothing" id="hermes" value="goodTimes">
-                    <label for="">I'm dressed up - Hermès link, brand new mink.</label>
-                    <!-- sixGod -->
-                    <input type="radio" name="clothing" id="raptors" value="sixGod">
-                    <label for="">We the north! - Wearing Raptors swag, lint free.</label>
+                <div class="question" id="question3">
+                    <h3>What are you wearing?</h3>
+                        <!-- sadBoi -->
+                        <ul class="card">
+                            <li>
+                                <input type="radio" name="clothing" id="sweatpants" value="sadBoi">
+                                <label for="sweatpants">Sweatpants, hair tied, chillin' with no makeup on. (Duh.)</label>
+                            </li>
+                            <!-- broskis -->
+                            <li>
+                                <input type="radio" name="clothing" id="owlSweaters" value="broskis">
+                                <label for="owlSweaters">OVO Gear - Owl sweaters inside the luggage, you gotta love it.</label>
+                            </li>
+                            <!-- ladiesMan -->
+                            <li>
+                                <input type="radio" name="clothing" id="fancy" value="ladiesMan">
+                                <label for="fancy">Nails done, hair done, every thing did - Oh you fancy, huh?</label>
+                            </li>
+                            <!-- toughGuy -->
+                            <li>
+                                <input type="radio" name="clothing" id="canadaGoose" value="toughGuy">
+                                <label for="canadaGoose">Flexin' in my Canada Goose - The 6 cold like Alaska.</label>
+                            </li>
+                            <!-- goodTimes -->
+                            <li>
+                                <input type="radio" name="clothing" id="hermes" value="goodTimes">
+                                <label for="hermes">I'm dressed up - Hermès link, brand new mink.</label>
+                            </li>
+                            <!-- sixGod -->
+                            <li>
+                                <input type="radio" name="clothing" id="raptors" value="sixGod">
+                                <label for="raptors">We the north! - Wearing Raptors swag, lint free.</label>
+                            </li>
+                        </ul>
+                        <a href="#question4" class="btn">Next Question</a>
+                    </div>
                 </div>
-                <div class="question question4">
-                    <p>Where was it taken?</p>
-                    <input type="radio" name="place" id="crib" value="sadBoi">
-                    <label for="crib">At the crib - I got a do mansion, 'cause I outgrew condo.</label>
-                    <!-- broskis -->
-                    <input type="radio" name="place" id="studio" value="broskis">
-                    <label for="studio">I got 40 in the studio, every night, late night.</label>
-                    <!-- ladiesMan -->
-                    <input type="radio" name="place" id="frings" value="ladiesMan">
-                    <label for="frings">Dining out - took bae to Fring's.</label>
-                    <!-- toughGuy -->
-                    <input type="radio" name="place" id="toothpick" value="toughGuy">
-                    <label for="toothpick">Playing with a toothpick - you can see the album hours under my eyes.</label>
-                    <!-- goodTimes -->
-                    <input type="radio" name="place" id="vacay-shot" value="goodTimes">
-                    <label for="vacay-shot">I'm on vacation - Got a time-share out in Calabasas.</label>
-                    <!-- sixGod -->
-                    <input type="radio" name="place" id="toronto-shot" value="sixGod">
-                    <label for="toronto-shot">Toronto! - The 6ix ain't friendly, but it's where I lay up.</label>
+                <div class="question" id="question4">
+                    <h3 class="h3--right">Where was it taken?</h3>
+                    <ul class="card card--right">
+                        <li>
+                            <input type="radio" name="place" id="crib" value="sadBoi">
+                            <label for="crib">At the crib - I got a do mansion, 'cause I outgrew condo.</label>
+                        </li>
+                        <!-- broskis -->
+                        <li>
+                            <input type="radio" name="place" id="studio" value="broskis">
+                            <label for="studio">At work - I got 40 in the studio, every night, late night.</label>
+                        </li>
+                        <!-- ladiesMan -->
+                        <li>
+                            <input type="radio" name="place" id="frings" value="ladiesMan">
+                            <label for="frings">Dining out - took bae to Fring's.</label>
+                        </li>
+                        <!-- toughGuy -->
+                        <li>
+                            <input type="radio" name="place" id="toothpick" value="toughGuy">
+                            <label for="toothpick">Playing with a toothpick - you can see the album hours under my eyes.</label>
+                        </li>
+                        <!-- goodTimes -->
+                        <li>
+                            <input type="radio" name="place" id="vacay-shot" value="goodTimes">
+                            <label for="vacay-shot">I'm on vacation - Got a time-share out in Calabasas.</label>
+                        </li>
+                        <!-- sixGod -->
+                        <li>
+                            <input type="radio" name="place" id="toronto-shot" value="sixGod">
+                            <label for="toronto-shot">Toronto! - The 6ix ain't friendly, but it's where I lay up.</label>
+                        </li>
+                    </ul>
+                    <a href="#question5" class="btn btn--right">Next Question</a>        
                 </div>
-                <div class="question question5">
-                    <p>What's your mood in the photo?</p>
-                    <input type="radio" name="mood" id="head-in-hands" value="sadBoi">
-                    <label for="head-in-hands">Sad and alone - I pop bottles because I bottle my emotions.</label>
-                    <!-- broskis -->
-                    <input type="radio" name="mood" id="crewLove" value="broskis">
-                    <label for="crewLove">Grateful for my bros - Lovin' the crew.</label>
-                    <!-- ladiesMan -->
-                    <input type="radio" name="mood" id="romantic" value="ladiesMan">
-                    <label for="romantic">Romantic - I want your hot love and emotion.</label>
-                    <!-- toughGuy -->
-                    <input type="radio" name="mood" id="noNaps" value="toughGuy">
-                    <label for="noNaps">Focused on the mission - I don't take naps.</label>
-                    <!-- goodTimes -->
-                    <input type="radio" name="mood" id="glowedUp" value="goodTimes">
-                    <label for="">Glowed up - Every time we touch down, bet it go up!</label>
-                    <!-- sixGod -->
-                    <input type="radio" name="mood" id="CNTower" value="sixGod">
-                    <label for="CNTower">Feelin' on top of the world - Or the CN Tower.</label>
+                <div class="question" id="question5">
+                    <h3>What's your mood?</h3>
+                    <ul class="card">
+                        <li>
+                            <input type="radio" name="mood" id="popBottles" value="sadBoi">
+                            <label for="popBottles">Sad and alone - I pop bottles because I bottle my emotions.</label>
+                        </li>
+                        <!-- broskis -->
+                        <li>
+                            <input type="radio" name="mood" id="crewLove" value="broskis">
+                            <label for="crewLove">Grateful for my bros - Lovin' the crew.</label>
+                        </li>
+                        <!-- ladiesMan -->
+                        <li>
+                            <input type="radio" name="mood" id="romantic" value="ladiesMan">
+                            <label for="romantic">Romantic - I want your hot love and emotion.</label>
+                        </li>
+                        <!-- toughGuy -->
+                        <li>
+                            <input type="radio" name="mood" id="noNaps" value="toughGuy">
+                            <label for="noNaps">Focused on the mission - I don't take naps.</label>
+                        </li>
+                        <!-- goodTimes -->
+                        <li>
+                            <input type="radio" name="mood" id="glowedUp" value="goodTimes">
+                            <label for="glowedUp">Glowed up - Every time we touch down, bet it go up!</label>
+                        </li>
+                        <!-- sixGod -->
+                        <li>
+                            <input type="radio" name="mood" id="CNTower" value="sixGod">
+                            <label for="CNTower">Feelin' on top of the world - Or the CN Tower.</label>
+                        </li>
+                    </ul>
+                    <input class="btn submit" type="submit" value="Get Your Drizzy Gem">
                 </div>
-                <input class="submit" type="submit">
             </form>
         </section>
-        <footer>
-            <div>Icons made by
-                <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from
-                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
-                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                    target="_blank">CC 3.0 BY</a>
-            </div>
-        </footer>
     </main>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C"
+    crossorigin="anonymous"></script>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

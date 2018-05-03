@@ -1,3 +1,72 @@
 $blue: #436e9b;
 $beige: #d4bca6;
 $dark: #1d110b;
+$dark-beige: #906B47;
+$beige-font: lighten($beige, 20);
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 50%;
+    min-width: 640px;
+    height: 60%;
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    &--right {
+        float: right;
+        margin-right: 10%;
+    }
+}
+
+ul {
+    margin-top: 0;
+    li {
+        position: relative;
+    }
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    &:checked ~ label {
+        color: $beige;
+        &::before {
+            background: $beige;
+            border-color: $beige;
+        }
+    }
+}
+
+label {
+    display: block;
+    float: left;
+    padding-left: 20px;
+    &::before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        height: 15px;
+        width: 15px;
+        background: transparent;
+        border: 3px solid lighten($beige, 20);
+        border-radius: 50%;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+// label {
+//     display: block;
+// }

@@ -1,47 +1,102 @@
 h1 {
-    color: white;
+    color: $blue;
     margin: 0;
     padding: 0 0 10px 0;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     background-size: 100px 100px;
     background: url('../images/background.jpg');
+    background-attachment: fixed;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 22vw;
+    font-size: 21vw;
+    letter-spacing: 15px;
     text-align: center;
     text-transform: uppercase;
-    line-height: 38vh;
+    line-height: 230px;
     position: relative;
-    img {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%)
+    .fa-gem {
+        height: 180px;
+        display: inline;
+        vertical-align: 10%;
+        font-size: 10vw;
+    }
+    // i {
+    //     svg {
+    //         display: block;
+    //         font-size: 10vw;
+    //         vertical-align: 40%;
+    //         -webkit-text-fill-color: transparent;
+    //         -webkit-background-clip: text;
+    //         fill: blue;
+    //     }
+
+    // }
+
+}
+
+h3 {
+    color: white;
+    font-family: 'Roboto Slab', monospace;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-left: 10%;
+    margin-top: 25px;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    &.h3--right {
+        display: inline-block;
+        float: right;
+        margin-right: 10%;
     }
 }
 
-a.btn {
-    
+label {
+    color: $beige-font;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: $beige;
-    display: block;
-    background: $blue;
-    padding: 10px 30px;
-    border-radius: 5px;
-    &:hover, {
-        background: darken($blue, 10);
+    font-size: 18px;
+    &:hover {
+        color: $beige;
+        text-decoration: underline;
     }
 }
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 10%;
+    margin-top: 30px;
+    float: left;
+    font-size: 20px;
+    color: $beige-font;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    &--right {
+        float: right;
+        margin-right: 10%;
+    }
+}
+
+// a.btn {
+//     
+//     
+//     
+//     display: block;
+//     background: $blue;     
+//     &:hover, {
+//         background: darken($blue, 10);
+//     }
+// }
 
 header p {
     font-family: 'Pinyon Script', cursive;
     color: $beige;
     font-size: 30px;
     line-height: 25px;
+    position: relative;
 }

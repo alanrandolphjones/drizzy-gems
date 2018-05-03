@@ -1,9 +1,132 @@
 header {
     height: 100vh;
+    min-height: 635px;
     background: $dark;
     background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    z-index: 5;
+    .btn {
+        display: block;
+        background: $blue;
+        margin: 0;
+        &:hover, &:focus {
+            background: darken($blue, 10);
+        }    
+    }
+}
+
+.questions {
+    .question {
+        height: 100vh;
+        min-height: 635px;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #question1 {
+        background-image: linear-gradient(to right, $dark-beige 0%, $dark-beige 50%, rgba($beige, 0.5) 100%), url(../images/question1-background.jpg);
+        .card {
+            background: $blue;
+        }
+        .btn {
+            background: $dark;
+            &:hover {
+                background: #000;
+                background: lighten($dark, 10);
+            }
+        }
+    }
+    #question2 {
+        background-image: linear-gradient(to left, $blue, rgba($blue, 0.5)), url(../images/question2-background.jpg);
+        .card {
+            background: $dark;
+        }
+        .btn {
+            background: white;
+            color: $dark;
+            &:hover {
+                background: lighten($beige, 10);
+            }
+        }
+    }
+    #question3 {
+        background-image: linear-gradient(to right, $dark, rgba($dark, 0.5)), url(../images/question3-background.jpg);
+        .card {
+            background: white;
+            label {
+                color: $dark;
+                &:hover {
+                    color: $dark-beige;
+                }
+                &::before {
+                    border-color: $dark;
+                }
+            }
+            input {
+                &:checked ~ label {
+                    color: $dark-beige;
+                    &::before {
+                        background: $dark-beige;
+                        border-color: $dark-beige;
+                    }
+                }
+            }
+        }
+        .btn {
+            background: $dark-beige;
+            color: white;
+            &:hover {
+                background: darken($dark-beige, 10);
+            }
+        }
+    }
+    #question4 {
+        background-image: linear-gradient(to left, rgba(white, 0.5), rgba(white, 0.5)), url(../images/question4-background.jpg);
+        h3 {
+            color: $dark;
+        }
+        .card {
+            background: $dark-beige;
+            label {
+                color: white;
+                &:hover {
+                    color: $beige;
+                }
+            }
+            input {
+                &:checked ~ label {
+                    color: $beige;
+                    &::before {
+                        background: $beige;
+                        border-color: $beige;
+                    }
+                }
+            }
+        }
+        .btn {
+            background: $blue;
+            &:hover {
+                background: darken($blue, 10);
+            }
+        }
+    }
+    #question5 {
+        background-image: linear-gradient(to right, $dark-beige 0%, $dark-beige 50%, rgba($beige, 0.5) 100%), url(../images/question5-background.jpg);
+        .card {
+            background: $blue;
+        }
+        .btn {
+            border: none;
+            background: $dark;
+            width: 300px;
+            &:hover {
+                color: white;
+                background: lighten($dark, 10);
+            }
+        }
+    }
 }
