@@ -49,7 +49,7 @@ app.resetDefaults = () => {
 
 app.getBack = () => {
 
-    $('.overlay, .exit-overlay').on('click', function (e) {
+    $('.overlay, .exit2 .exit-overlay').on('click', function (e) {
         e.preventDefault()
         
         $('.answer').toggleClass('hide');
