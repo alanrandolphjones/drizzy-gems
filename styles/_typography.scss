@@ -1,12 +1,13 @@
 h1 {
     color: $blue;
+    background: transparent;
     margin: 0;
     padding: 0 0 10px 0;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    background-size: 100px 100px;
-    background: url('../images/background.jpg');
-    background-attachment: fixed;
+    background-size: cover;
+    background: url('../images/header-background.jpg');
+    // background-attachment: fixed;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 21vw;
@@ -21,18 +22,18 @@ h1 {
         vertical-align: 10%;
         font-size: 10vw;
     }
-    // i {
-    //     svg {
-    //         display: block;
-    //         font-size: 10vw;
-    //         vertical-align: 40%;
-    //         -webkit-text-fill-color: transparent;
-    //         -webkit-background-clip: text;
-    //         fill: blue;
-    //     }
-
-    // }
-
+    @media (max-width: 940px) {
+        line-height: 160px;
+        color: $blue;
+        background: $dark;
+        -webkit-text-fill-color: $blue;
+        .fa-gem {
+            vertical-align: middle;
+        }
+    }
+    @media (max-width: 650px) {
+        line-height: 90px;
+    }
 }
 
 h3 {
@@ -46,10 +47,27 @@ h3 {
     position: relative;
     z-index: 0;
     &.h3--right {
-        display: inline-block;
         float: right;
         margin-right: 10%;
     }
+    @media (max-width: 650px) {
+        margin: 30px 10px 10px 10px;
+        text-align: center;
+    }
+
+}
+
+h4 {
+    color : white;
+    background: $red;
+    font-family: 'Roboto', serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0 10% 30px 10%;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 label {
@@ -59,6 +77,9 @@ label {
     &:hover {
         color: $beige;
         text-decoration: underline;
+    }
+    @media (max-width: 650px) {
+        font-size: 14px;
     }
 }
 
@@ -71,7 +92,6 @@ label {
     padding: 20px 0;
     margin-left: 10%;
     margin-top: 30px;
-    float: left;
     font-size: 20px;
     color: $beige-font;
     letter-spacing: 1px;
@@ -80,18 +100,10 @@ label {
         float: right;
         margin-right: 10%;
     }
+    @media (max-width: 650px) {
+        margin: 30px auto;
+    }
 }
-
-// a.btn {
-//     
-//     
-//     
-//     display: block;
-//     background: $blue;     
-//     &:hover, {
-//         background: darken($blue, 10);
-//     }
-// }
 
 header p {
     font-family: 'Pinyon Script', cursive;
@@ -99,4 +111,31 @@ header p {
     font-size: 30px;
     line-height: 25px;
     position: relative;
+    @media (max-width: 650px) {
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+.insta {
+    p {
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        color: #262626;
+        font-size: 14px;
+        margin: 10px 0 10px 10px;
+        .text {
+            font-weight: 400;
+        }
+    }
+    .view-all, .time {
+        color: #999;
+        font-weight: 400;
+    }
+    .time {
+        text-transform: uppercase;
+        font-size: 11px;
+    }
 }
