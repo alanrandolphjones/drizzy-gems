@@ -37,7 +37,6 @@ header {
     .question {
         display: flex;
         flex-flow: column nowrap;
-        // align-items: flex-start;
         height: 100vh;
         min-height: 635px;
         width: 100%;
@@ -55,7 +54,7 @@ header {
         }
         @media (max-width: 650px) {
             padding-top: 0px;
-            height: 600px;
+            height: auto;
         }
     }
     #question1 {
