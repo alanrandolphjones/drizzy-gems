@@ -3,11 +3,11 @@ main {
 }
 
 header {
-    height: 635px;
+    min-height: 100vh;
+    height: auto;
     background: url(../images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
-    // min-height: ;
     background: $dark;
     background-size: cover;
     display: flex;
@@ -15,10 +15,11 @@ header {
     align-items: center;
     position: relative;
     z-index: 5;
+    padding: 25px 0;
     .btn {
         display: block;
         background: $blue;
-        margin: 0;
+        margin: 25px 0;
         &:hover, &:focus {
             background: darken($blue, 10);
         }    

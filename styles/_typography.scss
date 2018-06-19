@@ -7,7 +7,6 @@ h1 {
     font-weight: 700;
     background-size: cover;
     background: url('../images/header-background.jpg');
-    // background-attachment: fixed;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 21vw;
@@ -17,7 +16,6 @@ h1 {
     line-height: 230px;
     position: relative;
     .fa-gem {
-        height: 180px;
         display: inline;
         vertical-align: 10%;
         font-size: 10vw;
@@ -33,6 +31,9 @@ h1 {
     }
     @media (max-width: 650px) {
         line-height: 90px;
+    }
+    @media (min-width: 1300px) {
+        line-height: 300px;
     }
 }
 
